@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    gap: 10px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.title{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.arrow{
+    height: 16px;
+    width: 16px;
+    background: url('../../public/rightArrow.svg');
+}

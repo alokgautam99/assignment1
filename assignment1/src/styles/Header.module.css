@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: -8px;
+}
+
+.wrapper{
+    display: flex;
+    margin-top: 24px;
+    align-items: center;
+    width: 1088px;
+    padding: 0px 24px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    height: 80px;
+}
+
+.name{
+    color: blue;
+}
+
+.navigation{
+    margin-left: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.link{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.bookcta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 128px;
+    height: 40px;
+    background: #008080;
+    border-radius: 8px;
+}
+
+.ctatext{
+    color: #FFFFFF;
+}
+
+.rightWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1136px;
+}
+
+@media only screen and (max-width:481px) {
+    .container{
+        display: none;
+    }
+    .rightWrapper{
+        display: none;
+    }
+    .wrapper{
+        margin-top: 0px;
+    }
+}

@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 544px;
+    margin-top: 40px;
+}
+
+.cardWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.title{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@media only screen and (max-width:481px) {
+    .container{
+        width: 100%;
+        overflow: hidden;
+    }
+}

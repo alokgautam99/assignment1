@@ -1,0 +1,11 @@
+.container{
+    background: #001A1A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.wrapper{
+    width: 1136px;
+}

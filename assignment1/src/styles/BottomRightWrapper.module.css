@@ -1,0 +1,13 @@
+.container{
+    width: 560px;
+    margin-top: 40px;
+}
+
+.title{
+    margin-bottom: 16px;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}

@@ -1,0 +1,57 @@
+.container{
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.desc{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.contact{
+    border: 1px solid #008080;
+    border-radius: 8px;
+    width: 105px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.text{
+    font-family: 'Greycliff CF';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    color: #008080;
+}
+
+.rightWrapper{
+    height: 128px;
+    width: 128px;
+    background: url('../../public/guide.svg');
+}

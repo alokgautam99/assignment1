@@ -1,0 +1,54 @@
+.container{
+    position: relative;
+    margin-top: 72px;
+}
+
+.welcome{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 6.44%, #FFFFFF 95.08%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.hawaii{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 132px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+@media only screen and (max-width:481px) {
+    .welcome{
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 60px;
+    }
+
+    .hawaii{
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 60px;
+    }
+    .container{
+        margin-top: 180px;
+    }
+}
