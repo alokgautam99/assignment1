@@ -1,24 +1,28 @@
 import HighlightsCardCss from '../src/styles/HighlightsCard.module.css';
+import Image from 'next/image';
 
-const HighlightsCard = () => {
+const HighlightsCard = ({data}) => {
+    const {title,description,image} = data;
     return (
         <div className={HighlightsCardCss.container}>
             <div className={HighlightsCardCss.image}>
+                <Image src={image} alt='icon' width={368} height={170} />
+            </div>
+            <div className={HighlightsCardCss.mwebImage}>
+                <Image src={image} alt='icon' width={334} height={170} />
             </div>
             <div className={HighlightsCardCss.infowrapper}>
                 <div className={HighlightsCardCss.wrapper}>
                     <div className={HighlightsCardCss.title}>
-                        Surfing
+                        {title}
                     </div>
                     <div className={HighlightsCardCss.desc}>
-                        Volcanic conditions can change at any time. Volcanic conditions can change time.
+                        {description}
                     </div>
                 </div>
                 <div className={HighlightsCardCss.arrowWrapper}>
                     <div className={HighlightsCardCss.arrowContainer}>
-                        <div className={HighlightsCardCss.arrow}>
-
-                        </div>
+                        <div className={HighlightsCardCss.arrow} />
                     </div>
                 </div>
             </div>

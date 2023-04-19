@@ -1,0 +1,23 @@
+.container{
+    display: none;
+}
+
+.hamburger{
+    height: 40px;
+    width: 40px;
+    background: url('../../public/hamburger.svg');
+}
+
+@media only screen and (max-width:481px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 346px;
+        height: 80px;
+        padding-left: 24px;
+        padding-right: 20px;
+    }
+}
+

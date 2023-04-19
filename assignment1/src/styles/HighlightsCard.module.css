@@ -13,6 +13,11 @@
     border-radius: 0px;
 }
 
+.mwebImage{
+    display: none;
+    border-radius: 0px;
+}
+
 .infowrapper{
     display: flex;
     flex-direction: column;
@@ -67,7 +72,10 @@
 
 @media only screen and (max-width:481px) {
     .image{
-        width: 334px;
+        display: none;
+    }
+    .mwebImage{
+        display: block;
     }
     .infowrapper{
         width: 284px;
