@@ -1,0 +1,58 @@
+.wrapper{
+    width: 1136px;
+}
+
+.placeImage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.heading{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 20px;
+}
+
+.activityHeading{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 20px;
+}
+
+.subHeading{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.activity{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.info{
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.details{
+    padding: 20px;
+}
+
+@media only screen and (max-width:481px) {
+    .wrapper{
+        width: 390px;
+    }
+}

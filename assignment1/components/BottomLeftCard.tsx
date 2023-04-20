@@ -3,7 +3,6 @@ import BottomLeftCardCss from '../src/styles/BottomLeftCard.module.css';
 
 const BottomLeftCard = ({data}) => {
     const [openCard, setOpenCard] = useState(false);
-    console.log(data);
     const {name, activities} = data;
 const leftCardClicked = () => {
     setOpenCard(!openCard);

@@ -17,7 +17,7 @@ const BottomLeftWrapper = () => {
     if(!response || !Object.keys(response).length){
         return null;
     }
-    console.log(categoriesObj);
+
     return (
         <div className={BottomLeftWrapperCss.container}>
             <div className={BottomLeftWrapperCss.title}>
