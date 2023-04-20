@@ -1,10 +1,12 @@
+import { useRouter } from 'next/router';
 import HighlightsCardCss from '../src/styles/HighlightsCard.module.css';
 import Image from 'next/image';
 
 const HighlightsCard = ({data}) => {
     const {title,description,image} = data;
+    const router = useRouter();
     return (
-        <div className={HighlightsCardCss.container}>
+        <div className={HighlightsCardCss.container} onClick={()=>{router.push(`/details/${title}`,`/details/${title}`)}}>
             <div className={HighlightsCardCss.image}>
                 <Image src={image} alt='icon' width={368} height={170} />
             </div>

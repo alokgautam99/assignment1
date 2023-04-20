@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import BottomLeftWrapperCss from '../src/styles/BottomLeftWrapper.module.css';
 import BottomLeftCard from './BottomLeftCard';
-import { categoriesObj } from './utils';
 import useFetch from './customHooks/fetcher';
 
 const BottomLeftWrapper = () => {
@@ -10,11 +9,12 @@ const BottomLeftWrapper = () => {
       const data = useFetch({Endpoint:'v1/categories'});
       data.then((res)=>{setResponse(res)})
     },[])
-  
+
     if(!response || !Object.keys(response).length){
-      setResponse(categoriesObj);
+        return null;
     }
-    if(!response || !Object.keys(response).length){
+    const {detail} = response;
+    if(detail){
         return null;
     }
 

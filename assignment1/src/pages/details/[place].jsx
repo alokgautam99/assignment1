@@ -7,26 +7,24 @@ import Footer from '../../../components/Footer';
 import PlaceDetail from '../../../components/placeComp/placeDetail';
 import Drawer from '../../../components/Drawer';
 import { useEffect, useState } from 'react';
-import { activitiesObj } from '../../../components/utils';
 import useFetch from '../../../components/customHooks/fetcher';
 import placeCss from '../../styles/Place.module.css'
-import Image from 'next/image';
 
 const TravelPage = () => {
     const {query: {place}} = useRouter();
     const [hamburger, setHamburger] = useState(false);
     const [response, setResponse] = useState();
     useEffect(()=>{
+    if(place){
       const data = useFetch({Endpoint:`v1/activities/${place}`});
       data.then((res)=>{setResponse(res)})
-    },[])
-  
-    if(!response || !Object.keys(response).length){
-      setResponse(activitiesObj);
     }
+    },[place])
+
     if(!response || !Object.keys(response).length){
         return null;
     }
+    const {detail} = response;
     return (
         <>
             <HeaderMweb hamburger={hamburger}setHamburger={setHamburger}/>
@@ -37,8 +35,9 @@ const TravelPage = () => {
             </div>
             </div>
             <div className={placeCss.Container}>
-                <PlaceDetail data={response} />
+                {detail ? <h1>Nothing here...</h1> : <PlaceDetail data={response} />}
             </div>
+            <Footer />
             <Drawer hamburger={hamburger}setHamburger={setHamburger} />
         </>
     );

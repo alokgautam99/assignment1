@@ -7,8 +7,6 @@ import HeaderText from '../../components/HeaderText';
 import Highlights from '../../components/Highlights';
 import IndexCss from '../styles/Index.module.css';
 import Drawer from '../../components/Drawer';
-import useFetch from '../../components/customHooks/fetcher';
-import {highLightsObj} from '../../components/utils'
 
 export default function Home() {
 

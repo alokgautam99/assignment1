@@ -1,5 +1,5 @@
 
-const host = 'https://jsonplaceholder.typicode.com/';
+const host = 'https://web-dev.dev.kimo.ai/';
 
 const useFetch = async ({Endpoint}) => {
     try {
@@ -7,7 +7,7 @@ const useFetch = async ({Endpoint}) => {
         const data = await res.json();
         return data;
     }catch (error){
-        
+        console.log(error);
     }
 }
 

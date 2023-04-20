@@ -2,19 +2,19 @@ import { useEffect, useState } from 'react';
 import HighlightsCss from '../src/styles/Highlights.module.css';
 import HighlightsCard from './HighlightsCard';
 import useFetch from './customHooks/fetcher';
-import { highLightsObj } from './utils';
 
 const Highlights = () => {
     const [response, setResponse] = useState();
     useEffect(()=>{
-      const data = useFetch({Endpoint:'todos/t'});
+      const data = useFetch({Endpoint:'v1/highlights'});
       data.then((res)=>{setResponse(res)})
     },[])
   
     if(!response || !Object.keys(response).length){
-      setResponse(highLightsObj);
+        return null;
     }
-    if(!response || !Object.keys(response).length){
+    const {detail} = response;
+    if(detail){
         return null;
     }
 

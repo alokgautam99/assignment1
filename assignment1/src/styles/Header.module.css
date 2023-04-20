@@ -17,7 +17,10 @@
 }
 
 .name{
-    color: blue;
+    width: 95px;
+    height: 35px;
+    background: url('../../public/iconBlack.svg');
+    cursor: pointer;
 }
 
 .navigation{
@@ -33,6 +36,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    cursor: pointer;
 }
 
 .bookcta{
@@ -43,6 +47,7 @@
     height: 40px;
     background: #008080;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .ctatext{
@@ -54,7 +59,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 1136px;
+    width: calc(100% - 95px);
 }
 
 @media only screen and (max-width:481px) {
